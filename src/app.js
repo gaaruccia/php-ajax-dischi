@@ -19,4 +19,24 @@ $( document ).ready(function(){
       alert("Errore!")
     }
   });
+  $.ajax({
+    url : "api.php",
+    method : 'GET',
+    success : function(data) {
+      $(".filtro-author #authors").on("input", function(){
+        var filtro = $(this).val();
+        $(".cd").each(function(){
+          var generaCd = $(this).data("author");
+          if (filtro === "" || filtro === generaCd) {
+            $(this).show();
+          }else{
+            $(this).hide();
+          };
+        });
+      });
+    },
+    error: function(stato){
+      alert("Errore!")
+    }
+  });
 });

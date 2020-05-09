@@ -14,7 +14,7 @@
       <div>
         <img src="img/logo.png" alt="logo" />
       </div>
-      <div class="filto-author">
+      <div class="filtro-author">
         <select id="authors">
           <option value=""></option>
           <option value="Bon Jovi">Bon Jovi</option>
@@ -28,8 +28,7 @@
           <option value="Dave Weckl">Dave Weckl</option>
           <option value="Michael Jacjson">Michael Jacjson</option>
         </select>
-      </div>
-    </header>
+      </header>
     <main>
       <div class="contenitore-dischi contenitore">
       <!--<div class="contenitore-dischi contenitore">
@@ -45,7 +44,7 @@
       </div>
     </main>
     <script id="entry-template" type="text/x-handlebars-template">
-      <div class="cd">
+      <div class="cd" data-author= "{{author}}">
         <img src="{{poster}}" alt="">
         <h2>{{title}}</h2>
         <span class="author">{{author}}</span>
