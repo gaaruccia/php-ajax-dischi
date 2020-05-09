@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="app.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="app.js" charset="utf-8"></script>
-    <?php require_once "server.php"; ?>
+    <?php /*require_once "server.php"; */?>
     <title>dischi</title>
   </head>
   <body>
